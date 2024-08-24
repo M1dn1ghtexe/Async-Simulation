@@ -122,12 +122,10 @@ class SimulateUsers{
 			this.listeners[eventName].push(callback)
 
 		}
-	
 
 		this.worker.postMessage({type:'genUsers'})
 	}
 }
-
 
 const simUsers=new SimulateUsers()
 const availableThreads=new AvailableThreads()
@@ -161,8 +159,6 @@ simUsers.on('newUser',(data)=>{
 			availableThreads.pushToQueue(st) 
 			availableThreads.executeNext()
 		}
-
-	
 	}
 	else{
 

@@ -4,7 +4,6 @@ const {Worker,workerData,parentPort}=require('worker_threads')
 const port=parentPort 
 
 port.on('message',(msg)=>{
-
 	
 	const user={
 		name:'John',
