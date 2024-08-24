@@ -1,6 +1,6 @@
-I created this in order to better understand how async and event driven architecture works. <br>
-The main goal is to keep the main thread free, and deffer CPU-intensive operations to another thread, in this way the main thread will be free to process new users that hit the server. <br>
-In this Node Js application i'm using Worker Threads for simulating async tasks and users. <br>  
+I developed this service  to gain a deeper understanding of asynchronous and event-driven architecture.  <br>
+The primary objective of this service is to offload CPU-intensive operations to separate threads, thereby preserving the responsiveness of the main thread. This approach enables the main thread to continuously handle incoming requests without interruption, improving overall system efficiency and performance. <br>
+In this Node Js application i'm using Worker Threads for simulating async tasks and users. <br>   
 
 <br>
 Main components:
